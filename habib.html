@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <title>MY CV</title>
+    <title>Habib Afolabi's CV</title>
+    <link rel="stylesheet" type="text/css" href="habib.css">
 </head>
 <body>
-    <div>
-        <img src="https://res.cloudinary.com/habibwritescode/image/upload/v1566736074/o0c8jukwunssrrvv6zpg.jpg" alt="Author's Picture" width="90" height="120"/>
+    <div class="profile">
+        <img class="push-left" src="https://res.cloudinary.com/habibwritescode/image/upload/v1566736074/o0c8jukwunssrrvv6zpg.jpg" alt="Author's Picture" width="90" height="120"/>
         <h1>Habib Afolabi</h1>
-        <p><strong>Address:</strong> No. 28C, Muyad Street, Sango, Ilorin, Kwara State. <strong>Phone No:</strong> +2347068472990 <strong>Email:</strong> thehabibafolabi@gmail.com</p>
+        <p><strong><span>Address</span>:</strong> No. 28C, Muyad Street, Sango, Ilorin, Kwara State. <strong><span>Mobile</span>:</strong> +2347068472990 <strong><span>Email</span>:</strong> thehabibafolabi@gmail.com</p>
     </div>
     <div>
         <h3>Summary</h3>
@@ -29,6 +30,16 @@
             <li>Semantic Html</li>
             <li>CSS</li>
         </ul>
+    </div>
+    <div class="contact-form">
+        <h4>Would you like to send me a message?</h4>
+        <form id="contact-form" method="POST" action="">
+            <input type="text" name="name" class="form-control" placeholder="Your name" required minlength="4"><br>
+            <input type="email" name="email" class="form-control" placeholder="Your email address" required minlength="4"><br>
+            <input type="text" class="form-control" placeholder="Title of your message" required minlength="4"><br>
+            <textarea name="message" class="form-control" placeholder="Type your message here" rows="4" required minlength="20"></textarea><br>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE" >
+        </form>
     </div>
 </body>
 
